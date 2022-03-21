@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+    --ff-main: 'Quicksand', sans-serif;
+    --ff-headings: 'Raleway', sans-serif;
+    --ff-logo: "Oleo Script", sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 500;
+    --fw-bolder: 700;
+
+    --fs-logo: 40px;
+    --fs-heading:30px;
+    --fs-reg: 18px;
+
+    --bg-nav: rgb(245, 243, 160);
+    --bg-light: rgb(255, 255, 255);
+    --bg-link: rgb(255, 251, 0);
+    --bg-countries: rgb(0, 160, 117);
+
+    --bs-primary: 2px 4px 8px rgb(68, 67, 67);
+}
+
+/* General Properties */
+body {
+    margin: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: var(--ff-main);
+}
+
+/* styling header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .15em 2em;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header__logo {
+    font-family: var(--ff-logo);
+    font-size: var(--fs-logo);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-weight: var(--fw-bolder);
+}
+
+.nav__lists {
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--bg-nav);
+    border-radius: 10px;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 2em;
+}
+
+.nav__link {
+    font-size: 18px;
+    padding: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+header nav a:hover {
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
+}
+
+.nav__link:hover {
+    color: black;
+}
+
+
+/* styling footer */
+footer {
+    background: linear-gradient(70deg, rgb(24, 24, 24), rgb(29, 29, 29));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    margin: 0 50px;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+}

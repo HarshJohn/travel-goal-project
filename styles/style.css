@@ -1,0 +1,93 @@
+/* styling main */
+/* hero section */
+#hero {
+    height: 500px;
+    background-image: url("/images/places/cover-ocean.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--bg-light);
+}
+
+.main__hero--div {
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    box-shadow: var(--bs-primary);
+    padding: 25px 0;
+    position: relative;
+    left: 33%;
+    top: 33%;
+}
+
+.main__section--title {
+    font-size: var(--fs-heading);
+    text-transform: uppercase;
+    font-family: var(--ff-headings);
+    margin: 0;
+    font-weight: var(--fw-bold);
+}
+
+.main__section--subtitle {
+    text-transform: uppercase;
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-reg);
+    margin-bottom: 1.5em;
+}
+
+.main__link {
+    text-decoration: none;
+    background-color: var(--bg-link);
+    padding: .5em 1.5em;
+    border-radius: 10px;
+    color: black;
+    font-size: var(--fs-reg);
+    font-weight: var(--fw-bolder);
+    box-shadow: var(--bs-primary);
+}
+
+.main__link:hover {
+    background-color: rgb(255, 238, 0);
+}
+
+/* highlight section */
+#highlights {
+    padding: 20px;
+    background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+}
+
+#highlights h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: calc(var(--fs-heading) + 5px);
+    color: rgb(59, 65, 64);
+    margin: 24px 0;
+}
+
+.destinations {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.destination {
+    text-align: center;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: var(--fs-reg);
+    color: rgb(124, 123, 123);
+}
+
+strong {
+    color: var(--bg-countries);
+}
+
+.highlight__img {
+    height: 200px;
+    width: 100%;
+    box-shadow: var(--bs-primary);
+    border-radius: 10px;
+    object-fit: cover;
+}
